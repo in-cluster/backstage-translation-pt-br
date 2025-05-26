@@ -1,0 +1,60 @@
+import { createTranslationMessages } from "@backstage/core-plugin-api/alpha";
+import { userSettingsTranslationRef } from "@backstage/plugin-user-settings/alpha";
+
+const pt = createTranslationMessages({
+    ref: userSettingsTranslationRef,
+    full: false,
+    messages: {
+        "featureFlags.title": "Sinalizadores de Funcionalidades",
+        "featureFlags.description": "Por favor, atualize a página ao alternar os sinalizadores de funcionalidade",
+        "featureFlags.filterTitle": "Filtro",
+        "featureFlags.clearFilter": "Limpar filtro",
+        "featureFlags.emptyFlags.title": "Nenhum Sinalizador de Funcionalidade",
+        "featureFlags.emptyFlags.action.title": "Um exemplo de como adicionar um sinalizador de funcionalidade é destacado abaixo:",
+        "featureFlags.emptyFlags.action.readMoreButtonTitle": "Ler Mais",
+        "featureFlags.emptyFlags.description": "Os Sinalizadores de Funcionalidade possibilitam que os plugins registrem funcionalidades no Backstage para que os usuários possam optar por elas. Você pode usar isso para dividir a lógica em seu código para testes A/B manuais, etc.",
+        "featureFlags.flagItem.title.disable": "Desabilitar",
+        "featureFlags.flagItem.title.enable": "Habilitar",
+        "featureFlags.flagItem.subtitle.registeredInApplication": "Registrado na aplicação",
+        "featureFlags.flagItem.subtitle.registeredInPlugin": "Registrado no plugin {{pluginId}}",
+        "languageToggle.select": "Selecionar idioma {{language}}",
+        "languageToggle.title": "Idioma",
+        "languageToggle.description": "Alterar o idioma",
+        "themeToggle.select": "Selecionar tema {{theme}}",
+        "themeToggle.title": "Tema",
+        "themeToggle.description": "Alterar o modo do tema",
+        "themeToggle.names.auto": "Automático",
+        "themeToggle.names.dark": "Escuro",
+        "themeToggle.names.light": "Claro",
+        "themeToggle.selectAuto": "Selecionar Tema Automático",
+        "signOutMenu.title": "Sair",
+        "signOutMenu.moreIconTitle": "mais",
+        "pinToggle.title": "Fixar Barra Lateral",
+        "pinToggle.description": "Evitar que a barra lateral se recolha",
+        "pinToggle.ariaLabelTitle": "Interruptor de Fixar Barra Lateral",
+        "pinToggle.switchTitles.unpin": "Desafixar Barra Lateral",
+        "pinToggle.switchTitles.pin": "Fixar Barra Lateral",
+        "identityCard.title": "Identidade Backstage",
+        "identityCard.noIdentityTitle": "Nenhuma Identidade Backstage",
+        "identityCard.userEntity": "Entidade de Usuário",
+        "identityCard.ownershipEntities": "Entidades de Propriedade",
+        "defaultProviderSettings.description": "Fornece autenticação para APIs e identidades {{provider}}",
+        "emptyProviders.title": "Nenhum Provedor de Autenticação",
+        "emptyProviders.action.title": "Abra app-config.yaml e faça as alterações conforme destacado abaixo:",
+        "emptyProviders.action.readMoreButtonTitle": "Ler Mais",
+        "emptyProviders.description": "Você pode adicionar Provedores de Autenticação ao Backstage, o que permite que você use esses provedores para se autenticar.",
+        "providerSettingsItem.title.signIn": "Entrar em {{title}}",
+        "providerSettingsItem.title.signOut": "Sair de {{title}}",
+        "providerSettingsItem.buttonTitle.signIn": "Entrar",
+        "providerSettingsItem.buttonTitle.signOut": "Sair",
+        "authProviders.title": "Provedores Disponíveis",
+        "defaultSettingsPage.tabsTitle.featureFlags": "Sinalizadores de Funcionalidades",
+        "defaultSettingsPage.tabsTitle.authProviders": "Provedores de Autenticação",
+        "defaultSettingsPage.tabsTitle.general": "Geral",
+        "settingsLayout.title": "Configurações",
+        "sidebarTitle": "Configurações"
+    }
+});
+
+export default pt;
+

@@ -1,0 +1,63 @@
+import { createTranslationMessages } from "@backstage/core-plugin-api/alpha";
+import { catalogReactTranslationRef } from "@backstage/plugin-catalog-react/alpha";
+
+const pt = createTranslationMessages({
+    ref: catalogReactTranslationRef,
+    full: false,
+    messages: {
+        "catalogFilter.title": "Filtros",
+        "catalogFilter.buttonTitle": "Filtros",
+        "entityKindPicker.title": "Tipo",
+        "entityKindPicker.errorMessage": "Falha ao carregar tipos de entidade",
+        "entityLifecyclePicker.title": "Ciclo de Vida",
+        "entityNamespacePicker.title": "Namespace",
+        "entityOwnerPicker.title": "Proprietário",
+        "entityProcessingStatusPicker.title": "Status de Processamento",
+        "entityTagPicker.title": "Tags",
+        "entityPeekAheadPopover.title": "Detalhe a entidade para ver todas as tags.",
+        "entityPeekAheadPopover.entityCardActionsTitle": "Mostrar detalhes",
+        "entityPeekAheadPopover.emailCardAction.title": "Enviar e-mail para {{email}}",
+        "entityPeekAheadPopover.emailCardAction.subTitle": "mailto {{email}}",
+        "entitySearchBar.placeholder": "Pesquisar",
+        "entityTypePicker.title": "Tipo",
+        "entityTypePicker.errorMessage": "Falha ao carregar tipos de entidade",
+        "entityTypePicker.optionAllTitle": "todos",
+        "favoriteEntity.addToFavorites": "Adicionar aos favoritos",
+        "favoriteEntity.removeFromFavorites": "Remover dos favoritos",
+        "inspectEntityDialog.title": "Inspetor de Entidade",
+        "inspectEntityDialog.closeButtonTitle": "Fechar",
+        "inspectEntityDialog.ancestryPage.title": "Ancestralidade",
+        "inspectEntityDialog.colocatedPage.title": "Colocalizados",
+        "inspectEntityDialog.colocatedPage.description": "Estas são as entidades que estão colocalizadas com esta entidade - ou seja, elas se originaram da mesma fonte de dados (por exemplo, vieram do mesmo arquivo YAML) ou da mesma origem (por exemplo, o URL originalmente registrado).",
+        "inspectEntityDialog.colocatedPage.alertNoLocation": "A entidade não tinha informações de localização.",
+        "inspectEntityDialog.colocatedPage.alertNoEntity": "Não havia outras entidades nesta localização.",
+        "inspectEntityDialog.jsonPage.title": "Entidade como JSON",
+        "inspectEntityDialog.jsonPage.description": "Estes são os dados brutos da entidade como recebidos do catálogo, em formato JSON.",
+        "inspectEntityDialog.overviewPage.title": "Visão Geral",
+        "inspectEntityDialog.yamlPage.title": "Entidade como YAML",
+        "inspectEntityDialog.yamlPage.description": "Estes são os dados brutos da entidade como recebidos do catálogo, em formato YAML.",
+        "unregisterEntityDialog.title": "Tem certeza de que deseja remover o registro desta entidade?",
+        "unregisterEntityDialog.cancelButtonTitle": "Cancelar",
+        "unregisterEntityDialog.deleteButtonTitle": "Excluir Entidade",
+        "unregisterEntityDialog.deleteEntitySuccessMessage": "Entidade {{entityName}} removida",
+        "unregisterEntityDialog.onlyDeleteStateTitle": "Esta entidade não parece se originar de um local registrado. Portanto, você só tem a opção de excluí-la diretamente do catálogo.",
+        "unregisterEntityDialog.errorStateTitle": "Erro interno: Estado desconhecido",
+        "unregisterEntityDialog.bootstrapState.title": "Você não pode remover o registro desta entidade, pois ela se origina de uma configuração protegida do Backstage (local \"{{location}}\"). Se você acredita que isso é um erro, entre em contato com o integrador do {{appTitle}}.",
+        "unregisterEntityDialog.bootstrapState.advancedDescription": "Você tem a opção de excluir a própria entidade do catálogo. Observe que isso só deve ser feito se você souber que o arquivo do catálogo foi excluído ou movido de seu local de origem. Caso contrário, a entidade reaparecerá em breve assim que a próxima rodada de atualização for realizada pelo catálogo.",
+        "unregisterEntityDialog.bootstrapState.advancedOptions": "Opções Avançadas",
+        "unregisterEntityDialog.unregisterState.title": "Esta ação removerá o registro das seguintes entidades:",
+        "unregisterEntityDialog.unregisterState.description": "Para desfazer, basta registrar novamente a entidade em {{appTitle}}.",
+        "unregisterEntityDialog.unregisterState.subTitle": "Localizado no seguinte local:",
+        "unregisterEntityDialog.unregisterState.advancedDescription": "Você também tem a opção de excluir a própria entidade do catálogo. Observe que isso só deve ser feito se você souber que o arquivo do catálogo foi excluído ou movido de seu local de origem. Caso contrário, a entidade reaparecerá em breve assim que a próxima rodada de atualização for realizada pelo catálogo.",
+        "unregisterEntityDialog.unregisterState.advancedOptions": "Opções Avançadas",
+        "unregisterEntityDialog.unregisterState.unregisterButtonTitle": "Remover Registro do Local",
+        "userListPicker.defaultOrgName": "Empresa",
+        "userListPicker.orgFilterAllLabel": "Todos",
+        "userListPicker.personalFilter.title": "Pessoal",
+        "userListPicker.personalFilter.ownedLabel": "Próprios",
+        "userListPicker.personalFilter.starredLabel": "Favoritos"
+    }
+})
+
+export default pt;
+
